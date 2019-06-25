@@ -1,0 +1,26 @@
+{% load render_bundle from webpack_loader %}
+{% load static i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}Djreact{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon"/> -->
+    {% render_bundle 'Common' 'css' attrs='crossorigin="anonymous"' %}
+    {% render_bundle 'Vendor' 'css' attrs='crossorigin="anonymous"' %}
+    {% block extraCss %}{% endblock extraCss %}
+    <noscript><style>body,.fixed-top{margin-top:24px}</style></noscript>
+</head>
+<body class="{% block bodycls %}{% endblock bodycls %}">
+    <div id="app" class="app"></div>
+    <!-- script -->
+    {% render_bundle 'Common' 'js' attrs='async chatset="UTF-8" crossorigin="anonymous"' %}
+    {% render_bundle 'Vendor' 'js' attrs='async chatset="UTF-8" crossorigin="anonymous"' %}
+    {% block extraJs %}{% endblock extraJs %}    
+    <noscript>
+        <div id="noscript-warn">This website needs JavaScript. Please enable it to continue.</div>
+    </noscript>
+</body>
+</html>

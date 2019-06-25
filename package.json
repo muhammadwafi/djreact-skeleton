@@ -1,0 +1,71 @@
+{
+  "name": "djreact-skeleton",
+  "version": "1.0.0",
+  "description": "Django with django rest framework and react js skeleton",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --config webpack.config.js --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadwafi/djreact-skeleton.git"
+  },
+  "keywords": [
+    "django",
+    "react",
+    "django",
+    "rest",
+    "framework",
+    "skeleton"
+  ],
+  "author": "www.mwprolabs.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muhammadwafi/djreact-skeleton/issues"
+  },
+  "homepage": "https://github.com/muhammadwafi/djreact-skeleton#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-babel": "^9.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.1",
+    "file-loader": "^4.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "prettier-eslint": "^9.0.0",
+    "prop-types": "^15.7.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.0",
+    "webpack": "^4.33.0",
+    "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-grid-system": "^4.4.6",
+    "reactstrap": "^8.0.0"
+  }
+}

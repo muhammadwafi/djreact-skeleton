@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "airbnb",
+        "plugin:prettier/recommended",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": ["prettier", "jsx-a11y"],
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/destructuring-assignment": [0, "always", { "ignoreClassFields": "yes" }],
+        "indent": ["error", 4, {"ignoredNodes": ["JSXElement"]}],
+        "react/jsx-indent": ["error", 4],
+        "prettier/prettier": [
+            "error",
+            {
+              "useTabs": false,
+              "tabWidth": 4,
+              "object-curly-spacing": ["error", "always"],
+              "array-bracket-spacing": ["error", "always"],
+              "computed-property-spacing": ["error", "always"]
+            }
+        ]
+    }
+}
